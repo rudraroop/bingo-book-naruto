@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+nav{
+    background-color: rgb(137, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: white;
+}
+
+nav button{
+    font-size: 2vh;
+}
+
+nav button:hover{
+    background-color: rgb(92, 6, 6);
+}
+
+button{
+    padding: 10px 15px;
+    background-color:rgb(137, 17, 17);
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+}
+
+.store-page{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.rank-title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.character-card{
+    color: black;
+    background-color: white;
+    width: 18%;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.character-card img{
+    height: 16vw;
+    max-height: 208px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media (max-width: 1050px){
+    .character-card{
+        width: 22%;
+    }   
+
+    .character-card img{
+        height: 20vw;
+    }
+}
+
+@media (max-width: 820px){
+    .character-card{
+        width: 29%;
+    }   
+
+    .character-card img{
+        height: 27vw;
+    }
+}
+
+@media (max-width: 650px){
+    .character-card{
+        width: 45%;
+    }   
+
+    .character-card h3{
+        font-size: 3.8vw;
+    }
+
+    .character-card img{
+        height: 41vw;
+    }
+}
+
+@media (max-width: 430px){
+    .character-card{
+        width: 41%;
+    }
+
+    .character-card img{
+        height: 40vw;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.character-card button{
+    padding: 7px 0px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 3px;
+}
+
+.remove-button{
+    background-color:rgb(137, 17, 17);
+    color: white;
+}
+
+.remove-button:hover{
+    background-color: rgb(234, 107, 81);
+    color: black;
+}
+
+.add-button{
+    background-color: rgb(129, 197, 26);
+    color: black;
+}
+
+.add-button:hover{
+    background-color: rgb(52, 82, 7);
+    color: white;
+}
+
+.rank-section{
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cart-item, .cart-total{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+@media (max-width: 650px){
+    .cart-item, .cart-total{
+        width: 90%;
+    }
+}
+
+.cart-item-right-end{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart .remove-button{
+    padding: 5px 7px;
+}
+
+.checkout-btn{
+    margin-top: 20px;
+    width: 25%;
+    font-size: 2vh;
+}
+
+@media (max-width: 650px) {
+    .checkout-btn{
+        font-size: 3.7vw;
+    }
+}
+
+.checkout-btn:hover{
+    background-color: rgb(231, 11, 11);
+}
+
+.cancel-page{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.cancel-page button{
+    width: 200px;
+    font-size: 17px;
+}
+
+.cancel-page button:hover{
+    background-color: rgb(92, 6, 6);
+}
+
+.bingo-book{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bingo-card{
+    background-color: white;
+    color: black;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+    gap: 15px;
+    border-radius: 5px;
+    max-width: 1000px;
+}
+
+@media (max-width: 820px){
+    .bingo-card{
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px){
+    .bingo-card{
+        width: 90%;
+    }
+}
