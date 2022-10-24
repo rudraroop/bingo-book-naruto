@@ -3,7 +3,7 @@
 
 const express = require('express');
 var cors = require('cors'); 
-const stripe = require('stripe')("YOUR-STRIPE-API-KEY");
+const stripe = require('stripe')("YOUR API KEY HERE");
 
 const app = express();
 app.use(cors());
